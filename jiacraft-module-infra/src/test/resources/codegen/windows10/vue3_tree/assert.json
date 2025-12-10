@@ -1,0 +1,49 @@
+[ {
+  "contentPath" : "java/InfraCategoryListReqVO",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/controller/admin/demo/vo/InfraCategoryListReqVO.java"
+}, {
+  "contentPath" : "java/InfraCategoryRespVO",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/controller/admin/demo/vo/InfraCategoryRespVO.java"
+}, {
+  "contentPath" : "java/InfraCategorySaveReqVO",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/controller/admin/demo/vo/InfraCategorySaveReqVO.java"
+}, {
+  "contentPath" : "java/InfraCategoryController",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/controller/admin/demo/InfraCategoryController.java"
+}, {
+  "contentPath" : "java/InfraCategoryDO",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/dal/dataobject/demo/InfraCategoryDO.java"
+}, {
+  "contentPath" : "java/InfraCategoryMapper",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/dal/mysql/demo/InfraCategoryMapper.java"
+}, {
+  "contentPath" : "xml/InfraCategoryMapper",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/resources/mapper/demo/InfraCategoryMapper.xml"
+}, {
+  "contentPath" : "java/InfraCategoryServiceImpl",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/service/demo/InfraCategoryServiceImpl.java"
+}, {
+  "contentPath" : "java/InfraCategoryService",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/main/java/site.hansi.jiacraft/module/infra/service/demo/InfraCategoryService.java"
+}, {
+  "contentPath" : "java/InfraCategoryServiceImplTest",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-biz/src/test/java/site.hansi.jiacraft/module/infra/service/demo/InfraCategoryServiceImplTest.java"
+}, {
+  "contentPath" : "java/ErrorCodeConstants_手动操作",
+  "filePath" : "jiacraft-module-infra/jiacraft-module-infra-api/src/main/java/site.hansi.jiacraft/module/infra/enums/ErrorCodeConstants_手动操作.java"
+}, {
+  "contentPath" : "sql/sql",
+  "filePath" : "sql/sql.sql"
+}, {
+  "contentPath" : "sql/h2",
+  "filePath" : "sql/h2.sql"
+}, {
+  "contentPath" : "vue/index",
+  "filePath" : "jiacraft-ui-admin-vue3/src/views/infra/demo/index.vue"
+}, {
+  "contentPath" : "vue/CategoryForm",
+  "filePath" : "jiacraft-ui-admin-vue3/src/views/infra/demo/CategoryForm.vue"
+}, {
+  "contentPath" : "ts/index",
+  "filePath" : "jiacraft-ui-admin-vue3/src/api/infra/demo/index.ts"
+} ]

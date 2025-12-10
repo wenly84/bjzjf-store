@@ -1,0 +1,3 @@
+site.hansi.jiacraft.framework.mq.redis.config.JiacraftRedisMQProducerAutoConfiguration
+site.hansi.jiacraft.framework.mq.redis.config.JiacraftRedisMQConsumerAutoConfiguration
+site.hansi.jiacraft.framework.mq.rabbitmq.config.JiacraftRabbitMQAutoConfiguration

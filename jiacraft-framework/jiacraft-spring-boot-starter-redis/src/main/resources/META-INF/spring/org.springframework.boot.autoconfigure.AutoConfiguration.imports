@@ -1,0 +1,2 @@
+site.hansi.jiacraft.framework.redis.config.JiacraftRedisAutoConfiguration
+site.hansi.jiacraft.framework.redis.config.JiacraftCacheAutoConfiguration

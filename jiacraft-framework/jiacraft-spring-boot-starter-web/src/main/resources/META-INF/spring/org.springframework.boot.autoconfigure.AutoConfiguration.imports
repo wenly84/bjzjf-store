@@ -1,0 +1,7 @@
+site.hansi.jiacraft.framework.apilog.config.JiacraftApiLogAutoConfiguration
+site.hansi.jiacraft.framework.jackson.config.JiacraftJacksonAutoConfiguration
+site.hansi.jiacraft.framework.swagger.config.JiacraftSwaggerAutoConfiguration
+site.hansi.jiacraft.framework.web.config.JiacraftWebAutoConfiguration
+site.hansi.jiacraft.framework.xss.config.JiacraftXssAutoConfiguration
+site.hansi.jiacraft.framework.banner.config.JiacraftBannerAutoConfiguration
+site.hansi.jiacraft.framework.encrypt.config.JiacraftApiEncryptAutoConfiguration
