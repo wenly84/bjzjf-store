@@ -1,0 +1,3 @@
+site.hansi.jiacraft.framework.datasource.config.JiacraftDataSourceAutoConfiguration
+site.hansi.jiacraft.framework.mybatis.config.JiacraftMybatisAutoConfiguration
+site.hansi.jiacraft.framework.translate.config.JiacraftTranslateAutoConfiguration

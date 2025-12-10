@@ -50,5 +50,5 @@ rebel.xml
 
 application-my.yaml
 
-/bjzjf-ui-app/unpackage/
-/doc/
+/jiacraft-ui-app/unpackage/
+**/.DS_Store
