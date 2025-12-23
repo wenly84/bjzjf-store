@@ -28,10 +28,6 @@ public interface TradeOrderApi {
      */
     TradeOrderRespDTO getOrder(Long id);
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-api/src/main/java/site/hansi/module/trade/api/order/TradeOrderApi.java
-    // TODO 智匠坊：需要优化下；
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade-api/src/main/java/site/hansi/jiacraft/module/trade/api/order/TradeOrderApi.java
     /**
      * 取消支付订单
      *

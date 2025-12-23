@@ -211,10 +211,6 @@ public interface BpmTaskConvert {
         childTask.setParentTaskId(parentTask.getId());
         childTask.setProcessDefinitionId(parentTask.getProcessDefinitionId());
         childTask.setProcessInstanceId(parentTask.getProcessInstanceId());
-<<<<<<< HEAD:bjzjf-module-bpm/bjzjf-module-bpm-biz/src/main/java/site/hansi/module/bpm/convert/task/BpmTaskConvert.java
-//        childTask.setExecutionId(parentTask.getExecutionId()); // TODO 智匠坊：新加的，不太确定；尴尬，不加时，子任务不通过会失败（报错）；加了，子任务审批通过会失败（报错）
-=======
->>>>>>> master:jiacraft-module-bpm/src/main/java/site/hansi/jiacraft/module/bpm/convert/task/BpmTaskConvert.java
         childTask.setTaskDefinitionKey(parentTask.getTaskDefinitionKey());
         childTask.setTaskDefinitionId(parentTask.getTaskDefinitionId());
         childTask.setPriority(parentTask.getPriority());

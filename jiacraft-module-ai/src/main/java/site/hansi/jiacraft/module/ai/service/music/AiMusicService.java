@@ -1,23 +1,11 @@
 package site.hansi.jiacraft.module.ai.service.music;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/music/AiMusicService.java
-=======
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.module.ai.controller.admin.music.vo.*;
 import site.hansi.jiacraft.module.ai.dal.dataobject.music.AiMusicDO;
 import jakarta.validation.Valid;
 
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/music/AiMusicService.java
 import java.util.List;
-
-import javax.validation.Valid;
-
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicPageReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicUpdateMyReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicUpdateReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiSunoGenerateReqVO;
-import site.hansi.module.ai.dal.dataobject.music.AiMusicDO;
 
 /**
  * AI 音乐 Service 接口

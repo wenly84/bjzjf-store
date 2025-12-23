@@ -1,18 +1,11 @@
 package site.hansi.jiacraft.module.ai.controller.admin.chat.vo.message;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
 import io.swagger.v3.oas.annotations.media.Schema;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/chat/vo/message/AiChatMessageSendReqVO.java
-import lombok.Data;
-=======
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 import java.util.List;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/chat/vo/message/AiChatMessageSendReqVO.java
 
 @Schema(description = "管理后台 - AI 聊天消息发送 Request VO")
 @Data

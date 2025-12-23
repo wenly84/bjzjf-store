@@ -68,12 +68,8 @@ public interface SeckillActivityMapper extends BaseMapperX<SeckillActivityDO> {
     default PageResult<SeckillActivityDO> selectPage(AppSeckillActivityPageReqVO pageReqVO, Integer status, LocalDateTime dateTime) {
         return selectPage(pageReqVO, new LambdaQueryWrapperX<SeckillActivityDO>()
                 .eqIfPresent(SeckillActivityDO::getStatus, status)
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-promotion-biz/src/main/java/site/hansi/module/promotion/dal/mysql/seckill/seckillactivity/SeckillActivityMapper.java
-                // TODO 智匠坊：对 find in set 的想法；
-=======
                 .lt(SeckillActivityDO::getStartTime, dateTime)
                 .gt(SeckillActivityDO::getEndTime, dateTime)// 开始时间 < 指定时间 < 结束时间，也就是说获取指定时间段的活动
->>>>>>> master:jiacraft-module-mall/jiacraft-module-promotion/src/main/java/site/hansi/jiacraft/module/promotion/dal/mysql/seckill/seckillactivity/SeckillActivityMapper.java
                 .apply(ObjectUtil.isNotNull(pageReqVO.getConfigId()), "FIND_IN_SET(" + pageReqVO.getConfigId() + ",config_ids) > 0"));
     }
 

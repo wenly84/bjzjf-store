@@ -22,13 +22,13 @@ import static site.hansi.jiacraft.framework.test.core.util.RandomUtils.randomPoj
 import static site.hansi.jiacraft.module.promotion.enums.ErrorCodeConstants.ARTICLE_CATEGORY_NOT_EXISTS;
 import static org.junit.jupiter.api.Assertions.*;
 
-// TODO 智匠坊：review 单测
+// TODO 芋艿：review 单测
 /**
  * {@link ArticleCategoryServiceImpl} 的单元测试类
  *
  * @author 北京智匠坊
  */
-@Disabled // TODO 智匠坊：后续 fix 补充的单测
+@Disabled // TODO 芋艿：后续 fix 补充的单测
 @Import(ArticleCategoryServiceImpl.class)
 public class ArticleCategoryServiceImplTest extends BaseDbUnitTest {
 

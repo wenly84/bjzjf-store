@@ -43,23 +43,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-promotion-biz/src/main/java/site/hansi/module/promotion/service/combination/CombinationRecordServiceImpl.java
-import static site.hansi.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static site.hansi.framework.common.util.collection.CollectionUtils.*;
-import static site.hansi.framework.common.util.date.LocalDateTimeUtils.afterNow;
-import static site.hansi.framework.common.util.date.LocalDateTimeUtils.beforeNow;
-import static site.hansi.module.promotion.enums.ErrorCodeConstants.*;
-import static site.hansi.module.promotion.enums.MessageTemplateConstants.COMBINATION_SUCCESS;
-
-// TODO 智匠坊：等拼团记录做完，完整 review 下
-=======
 import static site.hansi.jiacraft.framework.common.exception.util.ServiceExceptionUtil.exception;
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.*;
 import static site.hansi.jiacraft.framework.common.util.date.LocalDateTimeUtils.afterNow;
 import static site.hansi.jiacraft.framework.common.util.date.LocalDateTimeUtils.beforeNow;
 import static site.hansi.jiacraft.module.promotion.enums.ErrorCodeConstants.*;
 import static site.hansi.jiacraft.module.promotion.enums.MessageTemplateConstants.COMBINATION_SUCCESS;
->>>>>>> master:jiacraft-module-mall/jiacraft-module-promotion/src/main/java/site/hansi/jiacraft/module/promotion/service/combination/CombinationRecordServiceImpl.java
 
 /**
  * 拼团记录 Service 实现类
@@ -88,7 +77,7 @@ public class CombinationRecordServiceImpl implements CombinationRecordService {
     @Resource
     public SocialClientApi socialClientApi;
 
-    // TODO @智匠坊：在详细预览下；
+    // TODO @芋艿：在详细预览下；
     @Override
     public KeyValue<CombinationActivityDO, CombinationProductDO> validateCombinationRecord(
             Long userId, Long activityId, Long headId, Long skuId, Integer count) {

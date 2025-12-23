@@ -8,13 +8,8 @@ Authorization: Bearer {{token}}
 tenant-id: {{adminTenantId}}
 
 {
-<<<<<<< HEAD:bjzjf-module-system/bjzjf-module-system-biz/src/main/java/site/hansi/module/system/controller/admin/tenant/TenantController.http
-  "name": "智匠坊",
-  "contactName": "智匠坊",
-=======
   "name": "芋道",
   "contactName": "芋艿",
->>>>>>> master:jiacraft-module-system/src/main/java/site/hansi/jiacraft/module/system/controller/admin/tenant/TenantController.http
   "contactMobile": "15601691300",
   "status": 0,
   "domain": "https://www.iocoder.cn",

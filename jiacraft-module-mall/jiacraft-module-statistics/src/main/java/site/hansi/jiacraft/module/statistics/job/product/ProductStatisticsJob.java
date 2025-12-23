@@ -10,13 +10,6 @@ import site.hansi.jiacraft.module.statistics.service.product.ProductStatisticsSe
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-statistics-biz/src/main/java/site/hansi/module/statistics/job/product/ProductStatisticsJob.java
-import javax.annotation.Resource;
-
-// TODO 智匠坊：缺个 Job 的配置；等和 Product 一起配置
-
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-statistics/src/main/java/site/hansi/jiacraft/module/statistics/job/product/ProductStatisticsJob.java
 /**
  * 商品统计 Job
  *

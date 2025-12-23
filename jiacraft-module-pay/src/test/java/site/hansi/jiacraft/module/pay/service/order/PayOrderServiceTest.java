@@ -52,7 +52,7 @@ import static org.mockito.Mockito.*;
 /**
  * {@link PayOrderServiceImpl} 的单元测试类
  *
- * @author 智匠坊
+ * @author 芋艿
  */
 @Import({PayOrderServiceImpl.class, PayNoRedisDAO.class})
 public class PayOrderServiceTest extends BaseDbAndRedisUnitTest {

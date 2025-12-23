@@ -1,38 +1,5 @@
 package site.hansi.jiacraft.module.ai.controller.admin.model;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/model/AiApiKeyController.java
-import static site.hansi.framework.common.pojo.CommonResult.success;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertList;
-
-import java.util.List;
-
-import javax.annotation.Resource;
-import javax.validation.Valid;
-
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import site.hansi.framework.common.pojo.CommonResult;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.model.vo.apikey.AiApiKeyPageReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.apikey.AiApiKeyRespVO;
-import site.hansi.module.ai.controller.admin.model.vo.apikey.AiApiKeySaveReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.chatModel.AiChatModelRespVO;
-import site.hansi.module.ai.dal.dataobject.model.AiApiKeyDO;
-import site.hansi.module.ai.service.model.AiApiKeyService;
-=======
 import site.hansi.jiacraft.framework.common.pojo.CommonResult;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.framework.common.util.object.BeanUtils;
@@ -55,7 +22,6 @@ import java.util.List;
 
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertList;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/model/AiApiKeyController.java
 
 @Tag(name = "管理后台 - AI API 密钥")
 @RestController

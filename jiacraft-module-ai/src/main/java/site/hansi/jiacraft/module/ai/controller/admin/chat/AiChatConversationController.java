@@ -1,43 +1,7 @@
 package site.hansi.jiacraft.module.ai.controller.admin.chat;
 
-import static site.hansi.framework.common.pojo.CommonResult.success;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertList;
-import static site.hansi.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
-
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-import javax.validation.Valid;
-
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/chat/AiChatConversationController.java
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import site.hansi.framework.common.pojo.CommonResult;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationCreateMyReqVO;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationPageReqVO;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationRespVO;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationUpdateMyReqVO;
-import site.hansi.module.ai.dal.dataobject.chat.AiChatConversationDO;
-import site.hansi.module.ai.service.chat.AiChatConversationService;
-import site.hansi.module.ai.service.chat.AiChatMessageService;
-=======
 import site.hansi.jiacraft.framework.common.pojo.CommonResult;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.framework.common.util.object.BeanUtils;
@@ -64,7 +28,6 @@ import java.util.Map;
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertList;
 import static site.hansi.jiacraft.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/chat/AiChatConversationController.java
 
 @Tag(name = "管理后台 - AI 聊天对话")
 @RestController

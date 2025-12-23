@@ -1,44 +1,8 @@
 package site.hansi.jiacraft.module.ai.service.mindmap;
 
-import static site.hansi.framework.common.pojo.CommonResult.error;
-import static site.hansi.framework.common.pojo.CommonResult.success;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.annotation.Resource;
-
-import org.springframework.ai.chat.messages.Message;
-import org.springframework.ai.chat.messages.SystemMessage;
-import org.springframework.ai.chat.messages.UserMessage;
-import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.chat.model.ChatResponse;
-import org.springframework.ai.chat.prompt.ChatOptions;
-import org.springframework.ai.chat.prompt.Prompt;
-import org.springframework.stereotype.Service;
-
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/mindmap/AiMindMapServiceImpl.java
-import lombok.extern.slf4j.Slf4j;
-import reactor.core.publisher.Flux;
-import site.hansi.framework.ai.core.enums.AiPlatformEnum;
-import site.hansi.framework.ai.core.util.AiUtils;
-import site.hansi.framework.common.pojo.CommonResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.framework.tenant.core.util.TenantUtils;
-import site.hansi.module.ai.controller.admin.mindmap.vo.AiMindMapGenerateReqVO;
-import site.hansi.module.ai.dal.dataobject.mindmap.AiMindMapDO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatModelDO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatRoleDO;
-import site.hansi.module.ai.dal.mysql.mindmap.AiMindMapMapper;
-import site.hansi.module.ai.enums.AiChatRoleEnum;
-import site.hansi.module.ai.enums.ErrorCodeConstants;
-import site.hansi.module.ai.service.model.AiApiKeyService;
-import site.hansi.module.ai.service.model.AiChatModelService;
-import site.hansi.module.ai.service.model.AiChatRoleService;
-=======
 import site.hansi.jiacraft.module.ai.enums.model.AiModelTypeEnum;
 import site.hansi.jiacraft.module.ai.enums.model.AiPlatformEnum;
 import site.hansi.jiacraft.module.ai.util.AiUtils;
@@ -75,7 +39,6 @@ import static site.hansi.jiacraft.framework.common.exception.util.ServiceExcepti
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.error;
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.*;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/mindmap/AiMindMapServiceImpl.java
 
 /**
  * AI 思维导图 Service 实现类

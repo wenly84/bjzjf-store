@@ -127,10 +127,6 @@ public class BrokerageUserServiceImpl implements BrokerageUserService {
 
     @Override
     public BrokerageUserDO getOrCreateBrokerageUser(Long id) {
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-biz/src/main/java/site/hansi/module/trade/service/brokerage/BrokerageUserServiceImpl.java
-        // TODO @智匠坊：这块优化下；统一到注册时处理；
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade/src/main/java/site/hansi/jiacraft/module/trade/service/brokerage/BrokerageUserServiceImpl.java
         BrokerageUserDO brokerageUser = brokerageUserMapper.selectById(id);
         // 特殊：人人分销的情况下，如果分销人为空则创建分销人
         if (brokerageUser == null && ObjUtil.equal(BrokerageEnabledConditionEnum.ALL.getCondition(),

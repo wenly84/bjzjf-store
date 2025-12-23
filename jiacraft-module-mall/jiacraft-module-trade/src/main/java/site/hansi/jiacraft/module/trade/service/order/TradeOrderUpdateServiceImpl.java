@@ -927,17 +927,12 @@ public class TradeOrderUpdateServiceImpl implements TradeOrderUpdateService {
 
     @Override
     @Transactional(rollbackFor = Exception.class)
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-biz/src/main/java/site/hansi/module/trade/service/order/TradeOrderUpdateServiceImpl.java
-    public void cancelPaidOrder(Long userId, Long orderId) {
-        // TODO 智匠坊：这里实现要优化下；
-=======
     public void cancelPaidOrder(Long userId, Long orderId, Integer cancelType) {
         // 1.1 这里校验下 cancelType 只允许拼团关闭；
         if (ObjUtil.notEqual(TradeOrderCancelTypeEnum.COMBINATION_CLOSE.getType(), cancelType)) {
             return;
         }
         // 1.2 检验订单存在
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade/src/main/java/site/hansi/jiacraft/module/trade/service/order/TradeOrderUpdateServiceImpl.java
         TradeOrderDO order = tradeOrderMapper.selectOrderByIdAndUserId(orderId, userId);
         if (order == null) {
             throw exception(ORDER_NOT_FOUND);

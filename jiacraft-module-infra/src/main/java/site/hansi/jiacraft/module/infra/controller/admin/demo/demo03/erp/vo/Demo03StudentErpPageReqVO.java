@@ -13,7 +13,7 @@ import static site.hansi.jiacraft.framework.common.util.date.DateUtils.FORMAT_YE
 @Data
 public class Demo03StudentErpPageReqVO extends PageParam {
 
-    @Schema(description = "名字", example = "智匠坊")
+    @Schema(description = "名字", example = "芋艿")
     private String name;
 
     @Schema(description = "性别")

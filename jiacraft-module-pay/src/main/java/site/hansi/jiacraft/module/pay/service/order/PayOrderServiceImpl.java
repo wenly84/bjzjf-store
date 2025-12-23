@@ -438,13 +438,7 @@ public class PayOrderServiceImpl implements PayOrderService {
             return;
         }
 
-<<<<<<< HEAD:bjzjf-module-pay/bjzjf-module-pay-biz/src/main/java/site/hansi/module/pay/service/order/PayOrderServiceImpl.java
-        // TODO 智匠坊：应该 new 出来更新
-        order.setPrice(payPrice);
-        orderMapper.updateById(order);
-=======
         orderMapper.updateById(new PayOrderDO().setId(order.getId()).setPrice(payPrice));
->>>>>>> master:jiacraft-module-pay/src/main/java/site/hansi/jiacraft/module/pay/service/order/PayOrderServiceImpl.java
     }
 
     @Override

@@ -8,10 +8,6 @@ import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Resource;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-promotion-biz/src/main/java/site/hansi/module/promotion/job/coupon/CouponExpireJob.java
-// TODO 智匠坊：配置一个 Job
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-promotion/src/main/java/site/hansi/jiacraft/module/promotion/job/coupon/CouponExpireJob.java
 /**
  * 优惠券过期 Job
  *

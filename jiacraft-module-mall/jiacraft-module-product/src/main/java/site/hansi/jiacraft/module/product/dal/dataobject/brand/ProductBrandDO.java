@@ -50,9 +50,4 @@ public class ProductBrandDO extends BaseDO {
      */
     private Integer status;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-product-biz/src/main/java/site/hansi/module/product/dal/dataobject/brand/ProductBrandDO.java
-    // TODO 智匠坊：firstLetter 首字母
-
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-product/src/main/java/site/hansi/jiacraft/module/product/dal/dataobject/brand/ProductBrandDO.java
 }

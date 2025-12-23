@@ -1,14 +1,5 @@
 package site.hansi.jiacraft.module.ai.controller.admin.model.vo.model;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/model/vo/chatModel/AiChatModelSaveReqVO.java
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
-import site.hansi.framework.common.enums.CommonStatusEnum;
-import site.hansi.framework.common.validation.InEnum;
-=======
 import site.hansi.jiacraft.module.ai.enums.model.AiModelTypeEnum;
 import site.hansi.jiacraft.module.ai.enums.model.AiPlatformEnum;
 import site.hansi.jiacraft.framework.common.enums.CommonStatusEnum;
@@ -17,7 +8,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/model/vo/model/AiModelSaveReqVO.java
 
 @Schema(description = "管理后台 - API 模型新增/修改 Request VO")
 @Data

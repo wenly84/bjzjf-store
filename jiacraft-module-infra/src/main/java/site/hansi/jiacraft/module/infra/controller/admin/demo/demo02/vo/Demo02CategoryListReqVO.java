@@ -12,7 +12,7 @@ import static site.hansi.jiacraft.framework.common.util.date.DateUtils.FORMAT_YE
 @Data
 public class Demo02CategoryListReqVO {
 
-    @Schema(description = "名字", example = "智匠坊")
+    @Schema(description = "名字", example = "芋艿")
     private String name;
 
     @Schema(description = "父级编号", example = "6080")

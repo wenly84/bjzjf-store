@@ -56,14 +56,6 @@ import static site.hansi.jiacraft.module.pay.enums.refund.PayRefundStatusEnum.*;
 @Slf4j
 public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
 
-<<<<<<< HEAD:bjzjf-module-pay/bjzjf-module-pay-biz/src/main/java/site/hansi/module/pay/service/wallet/PayWalletRechargeServiceImpl.java
-    /**
-     * TODO 智匠坊：放到 payconfig
-     */
-    private static final Long WALLET_PAY_APP_ID = 8L;
-
-=======
->>>>>>> master:jiacraft-module-pay/src/main/java/site/hansi/jiacraft/module/pay/service/wallet/PayWalletRechargeServiceImpl.java
     private static final String WALLET_RECHARGE_ORDER_SUBJECT = "钱包余额充值";
 
     @Resource
@@ -109,7 +101,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
                 .setMerchantOrderId(recharge.getId().toString()) // 业务的订单编号
                 .setSubject(WALLET_RECHARGE_ORDER_SUBJECT).setBody("")
                 .setPrice(recharge.getPayPrice())
-                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO @智匠坊：支付超时时间
+                .setExpireTime(addTime(Duration.ofHours(2L)))); // TODO @芋艿：支付超时时间
         // 2.2 更新钱包充值记录中支付订单
         walletRechargeMapper.updateById(new PayWalletRechargeDO().setId(recharge.getId()).setPayOrderId(payOrderId));
         recharge.setPayOrderId(payOrderId);
@@ -306,7 +298,7 @@ public class PayWalletRechargeServiceImpl implements PayWalletRechargeService {
         if (wallet.getBalance() < walletRecharge.getTotalPrice()) {
             throw exception(WALLET_RECHARGE_REFUND_BALANCE_NOT_ENOUGH);
         }
-        // TODO @智匠坊：需要考虑下，赠送的金额，会不会导致提现超过；
+        // TODO @芋艿：需要考虑下，赠送的金额，会不会导致提现超过；
         return wallet;
     }
 
