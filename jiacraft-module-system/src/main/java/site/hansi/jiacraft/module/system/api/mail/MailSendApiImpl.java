@@ -10,7 +10,7 @@ import jakarta.annotation.Resource;
 /**
  * 邮件发送 API 实现类
  *
- * @author wangjingyi
+ * @author 北京智匠坊
  */
 @Service
 @Validated

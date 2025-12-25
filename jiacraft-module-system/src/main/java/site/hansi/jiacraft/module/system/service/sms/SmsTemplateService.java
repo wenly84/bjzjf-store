@@ -12,8 +12,7 @@ import java.util.Map;
 /**
  * 短信模板 Service 接口
  *
- * @author zzf
- * @since 2021/1/25 9:24
+ * @author 北京智匠坊
  */
 public interface SmsTemplateService {
 

@@ -30,7 +30,7 @@ import static site.hansi.jiacraft.module.system.enums.ErrorCodeConstants.*;
 /**
  * 邮箱发送 Service 实现类
  *
- * @author wangjingyi
+ * @author 北京智匠坊
  * @since 2022-03-21
  */
 @Service

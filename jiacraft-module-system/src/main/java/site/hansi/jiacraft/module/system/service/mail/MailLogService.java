@@ -13,7 +13,7 @@ import java.util.Map;
 /**
  * 邮件日志 Service 接口
  *
- * @author wangjingyi
+ * @author 北京智匠坊
  * @since 2022-03-21
  */
 public interface MailLogService {
