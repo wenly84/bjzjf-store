@@ -1,23 +1,11 @@
 package site.hansi.jiacraft.module.ai.controller.admin.model.vo.chatRole;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/model/vo/chatRole/AiChatRoleSaveReqVO.java
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.URL;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
-import site.hansi.framework.common.enums.CommonStatusEnum;
-import site.hansi.framework.common.validation.InEnum;
-=======
 import site.hansi.jiacraft.framework.common.enums.CommonStatusEnum;
 import site.hansi.jiacraft.framework.common.validation.InEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import jakarta.validation.constraints.*;
 import org.hibernate.validator.constraints.URL;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/model/vo/chatRole/AiChatRoleSaveReqVO.java
 
 import java.util.List;
 

@@ -43,13 +43,8 @@ public class DictTypeServiceImplTest extends BaseDbUnitTest {
     public void testGetDictTypePage() {
        // mock 数据
        DictTypeDO dbDictType = randomPojo(DictTypeDO.class, o -> { // 等会查询到
-<<<<<<< HEAD:bjzjf-module-system/bjzjf-module-system-biz/src/test/java/site/hansi/module/system/service/dict/DictTypeServiceImplTest.java
-           o.setName("bjzjf");
-           o.setType("智匠坊");
-=======
            o.setName("yunai");
            o.setType("芋艿");
->>>>>>> master:jiacraft-module-system/src/test/java/site/hansi/jiacraft/module/system/service/dict/DictTypeServiceImplTest.java
            o.setStatus(CommonStatusEnum.ENABLE.getStatus());
            o.setCreateTime(buildTime(2021, 1, 15));
        });

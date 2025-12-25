@@ -107,35 +107,4 @@ public class AppProductSpuController {
         return success(spuVO);
     }
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-product-biz/src/main/java/site/hansi/module/product/controller/app/spu/AppProductSpuController.java
-    private MemberLevelRespDTO getMemberLevel() {
-        Long userId = getLoginUserId();
-        if (userId == null) {
-            return null;
-        }
-        MemberUserRespDTO user = memberUserApi.getUser(userId);
-        if (user.getLevelId() == null || user.getLevelId() <= 0) {
-            return null;
-        }
-        return memberLevelApi.getMemberLevel(user.getLevelId());
-    }
-
-    /**
-     * 计算会员 VIP 优惠价格
-     *
-     * @param price 原价
-     * @param memberLevel 会员等级
-     * @return 优惠价格
-     */
-    public Integer calculateVipPrice(Integer price, MemberLevelRespDTO memberLevel) {
-        if (memberLevel == null || memberLevel.getDiscountPercent() == null) {
-            return 0;
-        }
-        Integer newPrice = price * memberLevel.getDiscountPercent() / 100;
-        return price - newPrice;
-    }
-
-    // TODO 智匠坊：商品的浏览记录；
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-product/src/main/java/site/hansi/jiacraft/module/product/controller/app/spu/AppProductSpuController.java
 }

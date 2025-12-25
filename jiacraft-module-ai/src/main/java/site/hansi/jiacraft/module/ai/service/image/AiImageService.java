@@ -1,19 +1,5 @@
 package site.hansi.jiacraft.module.ai.service.image;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/image/AiImageService.java
-import java.util.List;
-
-import javax.validation.Valid;
-
-import site.hansi.framework.ai.core.model.midjourney.api.MidjourneyApi;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.module.ai.controller.admin.image.vo.AiImageDrawReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.AiImagePageReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.AiImageUpdateReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.midjourney.AiMidjourneyActionReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.midjourney.AiMidjourneyImagineReqVO;
-import site.hansi.module.ai.dal.dataobject.image.AiImageDO;
-=======
 import site.hansi.jiacraft.module.ai.framework.ai.core.model.midjourney.api.MidjourneyApi;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.module.ai.controller.admin.image.vo.*;
@@ -23,7 +9,6 @@ import site.hansi.jiacraft.module.ai.dal.dataobject.image.AiImageDO;
 import jakarta.validation.Valid;
 
 import java.util.List;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/image/AiImageService.java
 
 /**
  * AI 绘图 Service 接口

@@ -257,13 +257,8 @@ public class SocialUserServiceImplTest extends BaseDbUnitTest {
         // mock 数据
         SocialUserDO dbSocialUser = randomPojo(SocialUserDO.class, o -> { // 等会查询到
             o.setType(SocialTypeEnum.GITEE.getType());
-<<<<<<< HEAD:bjzjf-module-system/bjzjf-module-system-biz/src/test/java/site/hansi/module/system/service/social/SocialUserServiceImplTest.java
-            o.setNickname("智匠坊");
-            o.setOpenid("bjzjfyuanma");
-=======
             o.setNickname("芋艿");
             o.setOpenid("jiacraftyuanma");
->>>>>>> master:jiacraft-module-system/src/test/java/site/hansi/jiacraft/module/system/service/social/SocialUserServiceImplTest.java
             o.setCreateTime(buildTime(2020, 1, 15));
         });
         socialUserMapper.insert(dbSocialUser);

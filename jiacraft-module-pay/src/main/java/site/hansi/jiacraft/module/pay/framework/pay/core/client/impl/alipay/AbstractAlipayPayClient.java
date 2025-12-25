@@ -236,35 +236,11 @@ public abstract class AbstractAlipayPayClient extends AbstractPayClient<AlipayPa
         }
         // ② 个性化的参数
         Participant payeeInfo = new Participant();
-<<<<<<< HEAD:bjzjf-module-pay/bjzjf-spring-boot-starter-biz-pay/src/main/java/site/hansi/framework/pay/core/client/impl/alipay/AbstractAlipayPayClient.java
-        PayTransferTypeEnum transferType = PayTransferTypeEnum.typeOf(reqDTO.getType());
-        switch (transferType) {
-            // TODO @jason：是不是不用传递 transferType 参数哈？因为应该已经明确是支付宝啦？
-            // @智匠坊。 是不是还要考虑转账到银行卡。所以传 transferType 但是转账到银行卡不知道要如何测试??
-            case ALIPAY_BALANCE: {
-                payeeInfo.setIdentityType("ALIPAY_LOGON_ID");
-                payeeInfo.setIdentity(reqDTO.getAlipayLogonId()); // 支付宝登录号
-                payeeInfo.setName(reqDTO.getUserName()); // 支付宝账号姓名
-                model.setPayeeInfo(payeeInfo);
-                break;
-            }
-            case BANK_CARD: {
-                payeeInfo.setIdentityType("BANKCARD_ACCOUNT");
-                // TODO 待实现
-                throw exception(NOT_IMPLEMENTED);
-            }
-            default: {
-                throw exception0(BAD_REQUEST.getCode(), "不正确的转账类型: {}", transferType);
-            }
-        }
-        // 1.3 构建 AlipayFundTransUniTransferRequest
-=======
         payeeInfo.setIdentityType("ALIPAY_LOGON_ID"); // 暂时只考虑转账到支付宝，银行没有权限 https://opendocs.alipay.com/open/02byvc?scene=66dd06f5a923403393b85de68d3c0055
         payeeInfo.setIdentity(reqDTO.getUserAccount()); // 支付宝登录号
         payeeInfo.setName(reqDTO.getUserName()); // 支付宝账号姓名
         model.setPayeeInfo(payeeInfo);
         // 1.2 构建 AlipayFundTransUniTransferRequest
->>>>>>> master:jiacraft-module-pay/src/main/java/site/hansi/jiacraft/module/pay/framework/pay/core/client/impl/alipay/AbstractAlipayPayClient.java
         AlipayFundTransUniTransferRequest request = new AlipayFundTransUniTransferRequest();
         request.setBizModel(model);
 

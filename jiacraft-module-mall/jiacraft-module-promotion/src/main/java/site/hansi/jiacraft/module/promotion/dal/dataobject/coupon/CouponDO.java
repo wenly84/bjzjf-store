@@ -50,13 +50,9 @@ public class CouponDO extends BaseDO {
      *
      * 枚举 {@link CouponStatusEnum}
      */
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-promotion-biz/src/main/java/site/hansi/module/promotion/dal/dataobject/coupon/CouponDO.java
-    // TODO 智匠坊：已作废？
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-promotion/src/main/java/site/hansi/jiacraft/module/promotion/dal/dataobject/coupon/CouponDO.java
     private Integer status;
 
-    // TODO 智匠坊：发放 adminid？
+    // TODO 芋艿：发放 adminid？
 
     // ========== 基本信息 END ==========
 

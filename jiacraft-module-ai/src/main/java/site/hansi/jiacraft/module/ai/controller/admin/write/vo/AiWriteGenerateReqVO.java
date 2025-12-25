@@ -1,19 +1,10 @@
 package site.hansi.jiacraft.module.ai.controller.admin.write.vo;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/write/vo/AiWriteGenerateReqVO.java
-import javax.validation.constraints.NotNull;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
-import site.hansi.framework.common.validation.InEnum;
-import site.hansi.module.ai.enums.write.AiWriteTypeEnum;
-=======
 import site.hansi.jiacraft.framework.common.validation.InEnum;
 import site.hansi.jiacraft.module.ai.enums.write.AiWriteTypeEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/write/vo/AiWriteGenerateReqVO.java
 
 @Schema(description = "管理后台 - AI 写作生成 Request VO")
 @Data

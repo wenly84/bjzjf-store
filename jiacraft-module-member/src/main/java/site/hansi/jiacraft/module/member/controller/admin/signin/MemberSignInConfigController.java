@@ -20,7 +20,7 @@ import java.util.List;
 
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 
-// TODO 智匠坊：url
+// TODO 芋艿：url
 @Tag(name = "管理后台 - 签到规则")
 @RestController
 @RequestMapping("/member/sign-in/config")

@@ -13,11 +13,7 @@ import org.hibernate.validator.constraints.URL;
 @Data
 public class UserProfileUpdateReqVO {
 
-<<<<<<< HEAD:bjzjf-module-system/bjzjf-module-system-biz/src/main/java/site/hansi/module/system/controller/admin/user/vo/profile/UserProfileUpdateReqVO.java
-    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "智匠坊")
-=======
     @Schema(description = "用户昵称", example = "芋艿")
->>>>>>> master:jiacraft-module-system/src/main/java/site/hansi/jiacraft/module/system/controller/admin/user/vo/profile/UserProfileUpdateReqVO.java
     @Size(max = 30, message = "用户昵称长度不能超过 30 个字符")
     private String nickname;
 

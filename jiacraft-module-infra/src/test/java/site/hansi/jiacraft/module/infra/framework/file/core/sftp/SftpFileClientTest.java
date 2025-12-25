@@ -24,17 +24,17 @@ public class SftpFileClientTest {
     public void test() {
         // 创建客户端
         SftpFileClientConfig config = new SftpFileClientConfig();
-        config.setDomain("http://127.0.0.1:48080");
+        config.setDomain("http://127.0.0.1:1984");
         config.setBasePath("/upload"); // 注意，这个是相对路径，不是实际 linux 上的路径！！！
-        config.setHost("127.0.0.1");
+        config.setHost("192.168.1.100");
         config.setPort(2222);
-        config.setUsername("foo");
-        config.setPassword("pass");
+        config.setUsername("yaowl");
+        config.setPassword("yaowl");
         SftpFileClient client = new SftpFileClient(0L, config);
         client.init();
         // 上传文件
         String path = IdUtil.fastSimpleUUID() + ".jpg";
-        byte[] content = ResourceUtil.readBytes("file/erweima.jpg");
+        byte[] content = ResourceUtil.readBytes("file/sxsy.jpg");
         String fullPath = client.upload(content, path, "image/jpeg");
         System.out.println("访问地址：" + fullPath);
         if (false) {

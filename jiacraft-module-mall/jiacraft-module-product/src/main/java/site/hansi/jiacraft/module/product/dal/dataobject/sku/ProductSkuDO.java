@@ -130,14 +130,5 @@ public class ProductSkuDO extends BaseDO {
 
     }
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-product-biz/src/main/java/site/hansi/module/product/dal/dataobject/sku/ProductSkuDO.java
-    // TODO 智匠坊：integral from y
-    // TODO 智匠坊：pinkPrice from y
-    // TODO 智匠坊：seckillPrice from y
-    // TODO 智匠坊：pinkStock from y
-    // TODO 智匠坊：seckillStock from y
-
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-product/src/main/java/site/hansi/jiacraft/module/product/dal/dataobject/sku/ProductSkuDO.java
 }
 

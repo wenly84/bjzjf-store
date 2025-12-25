@@ -78,16 +78,7 @@ public class MpMessageServiceImpl implements MpMessageService {
         MpAccountDO account = mpAccountService.getAccountFromCache(appId);
         Assert.notNull(account, "公众号账号({}) 不存在", appId);
 
-<<<<<<< HEAD:bjzjf-module-mp/bjzjf-module-mp-biz/src/main/java/site/hansi/module/mp/service/message/MpMessageServiceImpl.java
-        // 订阅事件不记录，因为此时公众号粉丝表中还没有此粉丝的数据
-        // TODO @智匠坊：这个修复，后续看看还有啥问题
-        if (ObjUtil.equal(wxMessage.getEvent(), WxConsts.EventType.SUBSCRIBE)) {
-            return;
-        }
-
-=======
         // 获取用户
->>>>>>> master:jiacraft-module-mp/src/main/java/site/hansi/jiacraft/module/mp/service/message/MpMessageServiceImpl.java
         MpUserDO user = mpUserService.getUser(appId, wxMessage.getFromUser());
         if (user == null) {
             // 特殊情况：因为 receiveMessage 是异步记录，可能 SubscribeHandler 还没存储好 User，此时 sleep 轮询

@@ -69,13 +69,8 @@ public class DictDataServiceImplTest extends BaseDbUnitTest {
     public void testGetDictDataPage() {
         // mock 数据
         DictDataDO dbDictData = randomPojo(DictDataDO.class, o -> { // 等会查询到
-<<<<<<< HEAD:bjzjf-module-system/bjzjf-module-system-biz/src/test/java/site/hansi/module/system/service/dict/DictDataServiceImplTest.java
-            o.setLabel("智匠坊");
-            o.setDictType("bjzjf");
-=======
             o.setLabel("芋艿");
             o.setDictType("yunai");
->>>>>>> master:jiacraft-module-system/src/test/java/site/hansi/jiacraft/module/system/service/dict/DictDataServiceImplTest.java
             o.setStatus(CommonStatusEnum.ENABLE.getStatus());
         });
         dictDataMapper.insert(dbDictData);

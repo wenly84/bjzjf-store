@@ -1,44 +1,6 @@
 package site.hansi.jiacraft.module.ai.controller.admin.image;
 
-import static site.hansi.framework.common.pojo.CommonResult.success;
-import static site.hansi.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
-
-import java.util.List;
-
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.validation.Valid;
-
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import cn.hutool.core.util.ObjUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/image/AiImageController.java
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.extern.slf4j.Slf4j;
-import site.hansi.framework.ai.core.model.midjourney.api.MidjourneyApi;
-import site.hansi.framework.common.pojo.CommonResult;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.image.vo.AiImageDrawReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.AiImagePageReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.AiImageRespVO;
-import site.hansi.module.ai.controller.admin.image.vo.AiImageUpdateReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.midjourney.AiMidjourneyActionReqVO;
-import site.hansi.module.ai.controller.admin.image.vo.midjourney.AiMidjourneyImagineReqVO;
-import site.hansi.module.ai.dal.dataobject.image.AiImageDO;
-import site.hansi.module.ai.service.image.AiImageService;
-=======
 import site.hansi.jiacraft.module.ai.framework.ai.core.model.midjourney.api.MidjourneyApi;
 import site.hansi.jiacraft.framework.common.pojo.CommonResult;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
@@ -64,7 +26,6 @@ import java.util.List;
 
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 import static site.hansi.jiacraft.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/image/AiImageController.java
 
 @Tag(name = "管理后台 - AI 绘画")
 @RestController

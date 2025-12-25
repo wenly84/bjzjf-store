@@ -200,10 +200,6 @@ public interface TradeOrderUpdateService {
      */
     void updateOrderCombinationInfo(Long orderId, Long activityId, Long combinationRecordId, Long headId);
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-biz/src/main/java/site/hansi/module/trade/service/order/TradeOrderUpdateService.java
-    // TODO 智匠坊：拼团取消，不调这个接口哈；
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade/src/main/java/site/hansi/jiacraft/module/trade/service/order/TradeOrderUpdateService.java
     /**
      * 取消支付订单
      *

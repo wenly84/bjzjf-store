@@ -157,18 +157,4 @@ public class TradeRewardActivityPriceCalculator implements TradePriceCalculator 
         return null;
     }
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-biz/src/main/java/site/hansi/module/trade/service/price/calculator/TradeRewardActivityPriceCalculator.java
-    /**
-     * 获得满减送活动部匹配时的提示
-     *
-     * @param rewardActivity 满减送活动
-     * @return 提示
-     */
-    private String getRewardActivityNotMeetTip(RewardActivityMatchRespDTO rewardActivity) {
-        // TODO 智匠坊：后面再想想；应该找第一个规则，算下还差多少即可。
-        return "TODO";
-    }
-
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade/src/main/java/site/hansi/jiacraft/module/trade/service/price/calculator/TradeRewardActivityPriceCalculator.java
 }

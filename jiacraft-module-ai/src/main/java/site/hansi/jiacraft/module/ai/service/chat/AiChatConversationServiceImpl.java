@@ -1,36 +1,9 @@
 package site.hansi.jiacraft.module.ai.service.chat;
 
-import static site.hansi.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertList;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.CHAT_CONVERSATION_MODEL_ERROR;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.CHAT_CONVERSATION_NOT_EXISTS;
-
-import java.time.LocalDateTime;
-import java.util.List;
-
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
-import org.springframework.validation.annotation.Validated;
-
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ObjectUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/chat/AiChatConversationServiceImpl.java
-import lombok.extern.slf4j.Slf4j;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationCreateMyReqVO;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationPageReqVO;
-import site.hansi.module.ai.controller.admin.chat.vo.conversation.AiChatConversationUpdateMyReqVO;
-import site.hansi.module.ai.dal.dataobject.chat.AiChatConversationDO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatModelDO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatRoleDO;
-import site.hansi.module.ai.dal.mysql.chat.AiChatConversationMapper;
-import site.hansi.module.ai.service.model.AiChatModelService;
-import site.hansi.module.ai.service.model.AiChatRoleService;
-=======
 import site.hansi.jiacraft.module.ai.enums.model.AiModelTypeEnum;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.framework.common.util.object.BeanUtils;
@@ -57,7 +30,6 @@ import static site.hansi.jiacraft.framework.common.exception.util.ServiceExcepti
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertList;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.CHAT_CONVERSATION_MODEL_ERROR;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.CHAT_CONVERSATION_NOT_EXISTS;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/chat/AiChatConversationServiceImpl.java
 
 /**
  * AI 聊天对话 Service 实现类

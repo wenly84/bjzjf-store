@@ -147,13 +147,8 @@ public class ConfigServiceImplTest extends BaseDbUnitTest {
     public void testGetConfigPage() {
         // mock 数据
         ConfigDO dbConfig = randomConfigDO(o -> { // 等会查询到
-<<<<<<< HEAD:bjzjf-module-infra/bjzjf-module-infra-biz/src/test/java/site/hansi/module/infra/service/config/ConfigServiceImplTest.java
-            o.setName("智匠坊");
-            o.setConfigKey("bjzjf");
-=======
             o.setName("芋艿");
             o.setConfigKey("yunai");
->>>>>>> master:jiacraft-module-infra/src/test/java/site/hansi/jiacraft/module/infra/service/config/ConfigServiceImplTest.java
             o.setType(ConfigTypeEnum.SYSTEM.getType());
             o.setCreateTime(buildTime(2021, 2, 1));
         });

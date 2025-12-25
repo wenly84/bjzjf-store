@@ -93,6 +93,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- 业务组件 -->
             <dependency>
                 <groupId>io.github.mouzt</groupId>

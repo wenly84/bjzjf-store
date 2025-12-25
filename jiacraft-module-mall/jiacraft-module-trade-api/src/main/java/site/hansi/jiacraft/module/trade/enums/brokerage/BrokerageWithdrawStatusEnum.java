@@ -6,10 +6,6 @@ import lombok.Getter;
 
 import java.util.Arrays;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-api/src/main/java/site/hansi/module/trade/enums/brokerage/BrokerageWithdrawStatusEnum.java
-// TODO 智匠坊：提现的打通，在纠结下；
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-trade-api/src/main/java/site/hansi/jiacraft/module/trade/enums/brokerage/BrokerageWithdrawStatusEnum.java
 /**
  * 佣金提现状态枚举
  *

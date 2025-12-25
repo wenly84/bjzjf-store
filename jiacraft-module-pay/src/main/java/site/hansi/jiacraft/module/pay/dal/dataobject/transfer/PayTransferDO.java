@@ -15,10 +15,6 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.Map;
 
-<<<<<<< HEAD:bjzjf-module-pay/bjzjf-module-pay-biz/src/main/java/site/hansi/module/pay/dal/dataobject/transfer/PayTransferDO.java
-// TODO 智匠坊：需要详细 review
-=======
->>>>>>> master:jiacraft-module-pay/src/main/java/site/hansi/jiacraft/module/pay/dal/dataobject/transfer/PayTransferDO.java
 /**
  * 转账单 DO
  *

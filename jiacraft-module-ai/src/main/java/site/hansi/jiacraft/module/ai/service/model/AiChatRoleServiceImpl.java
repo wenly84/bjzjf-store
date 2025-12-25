@@ -1,32 +1,8 @@
 package site.hansi.jiacraft.module.ai.service.model;
 
-import static site.hansi.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertList;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.CHAT_ROLE_DISABLE;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.CHAT_ROLE_NOT_EXISTS;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
-
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/model/AiChatRoleServiceImpl.java
-import lombok.extern.slf4j.Slf4j;
-import site.hansi.framework.common.enums.CommonStatusEnum;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRolePageReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveMyReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveReqVO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatRoleDO;
-import site.hansi.module.ai.dal.mysql.model.AiChatRoleMapper;
-=======
 import site.hansi.jiacraft.framework.common.enums.CommonStatusEnum;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.framework.common.util.object.BeanUtils;
@@ -48,7 +24,6 @@ import static site.hansi.jiacraft.framework.common.exception.util.ServiceExcepti
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertList;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.CHAT_ROLE_DISABLE;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.CHAT_ROLE_NOT_EXISTS;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/model/AiChatRoleServiceImpl.java
 
 /**
  * AI 聊天角色 Service 实现类

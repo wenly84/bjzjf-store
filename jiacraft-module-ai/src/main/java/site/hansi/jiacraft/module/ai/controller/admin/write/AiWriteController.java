@@ -1,36 +1,5 @@
 package site.hansi.jiacraft.module.ai.controller.admin.write;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/controller/admin/write/AiWriteController.java
-import static site.hansi.framework.common.pojo.CommonResult.success;
-import static site.hansi.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
-
-import javax.annotation.Resource;
-import javax.annotation.security.PermitAll;
-import javax.validation.Valid;
-
-import org.springframework.http.MediaType;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import reactor.core.publisher.Flux;
-import site.hansi.framework.common.pojo.CommonResult;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.framework.common.util.object.BeanUtils;
-import site.hansi.module.ai.controller.admin.write.vo.AiWriteGenerateReqVO;
-import site.hansi.module.ai.controller.admin.write.vo.AiWritePageReqVO;
-import site.hansi.module.ai.controller.admin.write.vo.AiWriteRespVO;
-import site.hansi.module.ai.dal.dataobject.write.AiWriteDO;
-import site.hansi.module.ai.service.write.AiWriteService;
-=======
 import site.hansi.jiacraft.framework.common.pojo.CommonResult;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.framework.common.util.object.BeanUtils;
@@ -51,7 +20,6 @@ import reactor.core.publisher.Flux;
 
 import static site.hansi.jiacraft.framework.common.pojo.CommonResult.success;
 import static site.hansi.jiacraft.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/controller/admin/write/AiWriteController.java
 
 @Tag(name = "管理后台 - AI 写作")
 @RestController

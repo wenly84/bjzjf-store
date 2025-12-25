@@ -1,43 +1,11 @@
 package site.hansi.jiacraft.module.ai.service.music;
 
-import static site.hansi.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertList;
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertMap;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.IMAGE_NOT_EXISTS;
-import static site.hansi.module.ai.enums.ErrorCodeConstants.MUSIC_NOT_EXISTS;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.text.StrPool;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/music/AiMusicServiceImpl.java
-import lombok.extern.slf4j.Slf4j;
-import site.hansi.framework.ai.core.model.suno.api.SunoApi;
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicPageReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicUpdateMyReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiMusicUpdateReqVO;
-import site.hansi.module.ai.controller.admin.music.vo.AiSunoGenerateReqVO;
-import site.hansi.module.ai.dal.dataobject.music.AiMusicDO;
-import site.hansi.module.ai.dal.mysql.music.AiMusicMapper;
-import site.hansi.module.ai.enums.music.AiMusicGenerateModeEnum;
-import site.hansi.module.ai.enums.music.AiMusicStatusEnum;
-import site.hansi.module.ai.service.model.AiApiKeyService;
-import site.hansi.module.infra.api.file.FileApi;
-=======
 import site.hansi.jiacraft.module.ai.framework.ai.core.model.suno.api.SunoApi;
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.module.ai.controller.admin.music.vo.AiMusicPageReqVO;
@@ -62,7 +30,6 @@ import static site.hansi.jiacraft.framework.common.util.collection.CollectionUti
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertMap;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.IMAGE_NOT_EXISTS;
 import static site.hansi.jiacraft.module.ai.enums.ErrorCodeConstants.MUSIC_NOT_EXISTS;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/music/AiMusicServiceImpl.java
 
 /**
  * AI 音乐 Service 实现类
@@ -86,13 +53,8 @@ public class AiMusicServiceImpl implements AiMusicService {
     @Transactional(rollbackFor = Exception.class)
     public List<Long> generateMusic(Long userId, AiSunoGenerateReqVO reqVO) {
         // 1. 调用 Suno 生成音乐
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/music/AiMusicServiceImpl.java
-        SunoApi sunoApi = apiKeyService.getSunoApi();
-        List<SunoApi.MusicData> musicDataList = null;
-=======
         SunoApi sunoApi = modelService.getSunoApi();
         List<SunoApi.MusicData> musicDataList;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/music/AiMusicServiceImpl.java
         if (Objects.equals(AiMusicGenerateModeEnum.DESCRIPTION.getMode(), reqVO.getGenerateMode())) {
             // 1.1 描述模式
             SunoApi.MusicGenerateRequest generateRequest = new SunoApi.MusicGenerateRequest(
@@ -203,18 +165,18 @@ public class AiMusicServiceImpl implements AiMusicService {
      */
     private List<AiMusicDO> buildMusicDOList(List<SunoApi.MusicData> musicList) {
         return convertList(musicList, musicData -> {
-            Integer status = Objects.equals("complete", musicData.getStatus()) ? AiMusicStatusEnum.SUCCESS.getStatus()
-                    : Objects.equals("error", musicData.getStatus()) ? AiMusicStatusEnum.FAIL.getStatus()
+            Integer status = Objects.equals("complete", musicData.status()) ? AiMusicStatusEnum.SUCCESS.getStatus()
+                    : Objects.equals("error", musicData.status()) ? AiMusicStatusEnum.FAIL.getStatus()
                     : AiMusicStatusEnum.IN_PROGRESS.getStatus();
             return new AiMusicDO()
-                    .setTaskId(musicData.getId()).setModel(musicData.getModelName())
-                    .setDescription(musicData.getGptDescriptionPrompt())
-                    .setAudioUrl(downloadFile(status, musicData.getAudioUrl()))
-                    .setVideoUrl(downloadFile(status, musicData.getVideoUrl()))
-                    .setImageUrl(downloadFile(status, musicData.getImageUrl()))
-                    .setTitle(musicData.getTitle()).setDuration(musicData.getDuration())
-                    .setLyric(musicData.getLyric()).setTags(StrUtil.split(musicData.getTags(), StrPool.COMMA))
-                    .setErrorMessage(musicData.getErrorMessage())
+                    .setTaskId(musicData.id()).setModel(musicData.modelName())
+                    .setDescription(musicData.gptDescriptionPrompt())
+                    .setAudioUrl(downloadFile(status, musicData.audioUrl()))
+                    .setVideoUrl(downloadFile(status, musicData.videoUrl()))
+                    .setImageUrl(downloadFile(status, musicData.imageUrl()))
+                    .setTitle(musicData.title()).setDuration(musicData.duration())
+                    .setLyric(musicData.lyric()).setTags(StrUtil.split(musicData.tags(), StrPool.COMMA))
+                    .setErrorMessage(musicData.errorMessage())
                     .setStatus(status);
         });
     }

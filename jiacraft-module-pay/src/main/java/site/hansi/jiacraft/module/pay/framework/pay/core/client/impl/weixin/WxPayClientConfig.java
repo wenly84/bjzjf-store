@@ -78,17 +78,12 @@ public class WxPayClientConfig implements PayClientConfig {
     @NotBlank(message = "证书序列号不能为空", groups = V3.class)
     private String certSerialNo;
 
-<<<<<<< HEAD:bjzjf-module-pay/bjzjf-spring-boot-starter-biz-pay/src/main/java/site/hansi/framework/pay/core/client/impl/weixin/WxPayClientConfig.java
-    @Deprecated // TODO 智匠坊：V2.3.0 进行移除
-    private String privateCertContent;
-=======
     /**
      * pub_key.pem 证书文件的对应字符串
      */
     private String publicKeyContent;
     @NotBlank(message = "publicKeyId 不能为空", groups = V3.class)
     private String publicKeyId;
->>>>>>> master:jiacraft-module-pay/src/main/java/site/hansi/jiacraft/module/pay/framework/pay/core/client/impl/weixin/WxPayClientConfig.java
 
     /**
      * 分组校验 v2版本

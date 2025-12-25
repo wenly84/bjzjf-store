@@ -64,25 +64,6 @@ public class BpmProcessInstanceRespVO {
      */
     private List<Task> tasks; // 仅在流程实例分页才返回
 
-<<<<<<< HEAD:bjzjf-module-bpm/bjzjf-module-bpm-biz/src/main/java/site/hansi/module/bpm/controller/admin/task/vo/instance/BpmProcessInstanceRespVO.java
-    @Schema(description = "用户信息")
-    @Data
-    public static class User {
-
-        @Schema(description = "用户编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
-        private Long id;
-        @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "智匠坊")
-        private String nickname;
-
-        @Schema(description = "部门编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1")
-        private Long deptId;
-        @Schema(description = "部门名称", requiredMode = Schema.RequiredMode.REQUIRED, example = "研发部")
-        private String deptName;
-
-    }
-
-=======
->>>>>>> master:jiacraft-module-bpm/src/main/java/site/hansi/jiacraft/module/bpm/controller/admin/task/vo/instance/BpmProcessInstanceRespVO.java
     @Schema(description = "流程任务")
     @Data
     public static class Task {

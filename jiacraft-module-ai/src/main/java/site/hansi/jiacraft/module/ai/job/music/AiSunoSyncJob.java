@@ -1,20 +1,10 @@
 package site.hansi.jiacraft.module.ai.job.music;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/job/music/AiSunoSyncJob.java
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Component;
-
-import lombok.extern.slf4j.Slf4j;
-import site.hansi.framework.quartz.core.handler.JobHandler;
-import site.hansi.module.ai.service.music.AiMusicService;
-=======
 import site.hansi.jiacraft.framework.quartz.core.handler.JobHandler;
 import site.hansi.jiacraft.module.ai.service.music.AiMusicService;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/job/music/AiSunoSyncJob.java
 
 
 /**

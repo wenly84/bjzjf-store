@@ -58,7 +58,7 @@ public class CouponTemplateDO extends BaseDO {
      *
      * 枚举 {@link CommonStatusEnum}
      */
-    // TODO 智匠坊：要不要改成 3 个状态？？
+    // TODO 芋艿：要不要改成 3 个状态？？
     private Integer status;
 
     // ========== 基本信息 END ==========
@@ -174,10 +174,6 @@ public class CouponTemplateDO extends BaseDO {
 
     // ========== 统计信息 END ==========
 
-    // TODO 智匠坊：领取开始时间、领取结束时间
+    // TODO 芋艿：领取开始时间、领取结束时间
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-promotion-biz/src/main/java/site/hansi/module/promotion/dal/dataobject/coupon/CouponTemplateDO.java
-    // TODO 智匠坊：要不要加描述
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-promotion/src/main/java/site/hansi/jiacraft/module/promotion/dal/dataobject/coupon/CouponTemplateDO.java
 }

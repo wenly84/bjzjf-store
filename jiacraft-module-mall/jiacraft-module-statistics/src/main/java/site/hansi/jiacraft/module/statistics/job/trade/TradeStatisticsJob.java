@@ -11,10 +11,6 @@ import org.springframework.stereotype.Component;
 
 import jakarta.annotation.Resource;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-statistics-biz/src/main/java/site/hansi/module/statistics/job/trade/TradeStatisticsJob.java
-// TODO 智匠坊：缺个 Job 的配置；等和 Product 一起配置
-=======
->>>>>>> master:jiacraft-module-mall/jiacraft-module-statistics/src/main/java/site/hansi/jiacraft/module/statistics/job/trade/TradeStatisticsJob.java
 /**
  * 交易统计 Job
  *

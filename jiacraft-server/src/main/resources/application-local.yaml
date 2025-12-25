@@ -49,17 +49,11 @@ spring:
           url: jdbc:mysql://127.0.0.1:3306/bjzjf_mall?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true # MySQL Connector/J 8.X 连接的示例
           username: root
           password: root
-<<<<<<< HEAD:bjzjf-server/src/main/resources/application-local.yaml
-        slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
-          lazy: true # 开启懒加载，保证启动速度
-          url: jdbc:mysql://127.0.0.1:3306/bjzjf-boot?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
-=======
           druid: 
             validation-query: SELECT 1 FROM DUAL  
         slave: # 模拟从库，可根据自己需要修改 # 模拟从库，可根据自己需要修改
           lazy: true # 开启懒加载，保证启动速度
           url: jdbc:mysql://127.0.0.1:3306/bjzjf_mall?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true&rewriteBatchedStatements=true # MySQL Connector/J 8.X 连接的示例
->>>>>>> master:jiacraft-server/src/main/resources/application-local.yaml
           username: root
           password: root
           druid: 
@@ -167,26 +161,6 @@ logging:
     name: ${user.home}/logs/${spring.application.name}.log # 日志文件名，全路径
   level:
     # 配置自己写的 MyBatis Mapper 打印日志
-<<<<<<< HEAD:bjzjf-server/src/main/resources/application-local.yaml
-    site.hansi.module.bpm.dal.mysql: debug
-    site.hansi.module.infra.dal.mysql: debug
-    site.hansi.module.infra.dal.mysql.logger.ApiErrorLogMapper: INFO # 配置 ApiErrorLogMapper 的日志级别为 info，避免和 GlobalExceptionHandler 重复打印
-    site.hansi.module.infra.dal.mysql.job.JobLogMapper: INFO # 配置 JobLogMapper 的日志级别为 info
-    site.hansi.module.infra.dal.mysql.file.FileConfigMapper: INFO # 配置 FileConfigMapper 的日志级别为 info
-    site.hansi.module.pay.dal.mysql: debug
-    site.hansi.module.pay.dal.mysql.notify.PayNotifyTaskMapper: INFO # 配置 PayNotifyTaskMapper 的日志级别为 info
-    site.hansi.module.system.dal.mysql: debug
-    site.hansi.module.system.dal.mysql.sms.SmsChannelMapper: INFO # 配置 SmsChannelMapper 的日志级别为 info
-    site.hansi.module.tool.dal.mysql: debug
-    site.hansi.module.member.dal.mysql: debug
-    site.hansi.module.trade.dal.mysql: debug
-    site.hansi.module.promotion.dal.mysql: debug
-    site.hansi.module.statistics.dal.mysql: debug
-    site.hansi.module.crm.dal.mysql: debug
-    site.hansi.module.erp.dal.mysql: debug
-    site.hansi.module.ai.dal.mysql: debug
-    org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR # TODO 智匠坊：先禁用，Spring Boot 3.X 存在部分错误的 WARN 提示
-=======
     cn.bjetc.dsrm.module.bpm.dal.mysql: debug
     cn.bjetc.dsrm.module.infra.dal.mysql: debug
     cn.bjetc.dsrm.module.infra.dal.mysql.logger.ApiErrorLogMapper: INFO # 配置 ApiErrorLogMapper 的日志级别为 info，避免和 GlobalExceptionHandler 重复打印
@@ -208,17 +182,11 @@ logging:
     cn.bjetc.dsrm.module.iot.service.rule: debug
     cn.bjetc.dsrm.module.ai.dal.mysql: debug
     org.springframework.context.support.PostProcessorRegistrationDelegate: ERROR # TODO 芋艿：先禁用，Spring Boot 3.X 存在部分错误的 WARN 提示
->>>>>>> master:jiacraft-server/src/main/resources/application-local.yaml
 
 debug: false
 
 --- #################### 微信公众号、小程序相关配置 ####################
 wx:
-<<<<<<< HEAD:bjzjf-server/src/main/resources/application-local.yaml
-  mp: # 公众号配置
-    app-id: wxbb874b45e9817e3b
-    secret: 6aebc0b7dcfe79121c38b382972eb8ba
-=======
   mp: # 公众号配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-mp-spring-boot-starter/README.md 文档
 #    app-id: wx041349c6f39b268b # 测试号（牛希尧提供的）
 #    secret: 5abee519483bc9f8cb37ce280e814bd0
@@ -227,16 +195,10 @@ wx:
     app-id: wxf56b1542b9e85f8a # 测试号（Kongdy 提供的）
     secret: 496379dcef1ba869e9234de8d598cfd3
     # 存储配置，解决 AccessToken 的跨节点的共享
->>>>>>> master:jiacraft-server/src/main/resources/application-local.yaml
     config-storage:
       type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
       key-prefix: wx # Redis Key 的前缀
       http-client-type: HttpClient # 采用 HttpClient 请求微信公众号平台
-<<<<<<< HEAD:bjzjf-server/src/main/resources/application-local.yaml
-  miniapp: # 小程序配置
-    appid: wxbb874b45e9817e3b
-    secret: 6aebc0b7dcfe79121c38b382972eb8ba
-=======
   miniapp: # 小程序配置（必填），参见 https://github.com/Wechat-Group/WxJava/blob/develop/spring-boot-starters/wx-java-miniapp-spring-boot-starter/README.md 文档
     #    appid: wx62056c0d5e8db250 # 测试号（牛希尧提供的）
     #    secret: 333ae72f41552af1e998fe1f54e1584a
@@ -246,7 +208,6 @@ wx:
     secret: 4a1a04e07f6a4a0751b39c3064a92c8b
 #    appid: wx66186af0759f47c9 # 测试号（puhui 提供的）
 #    secret: 3218bcbd112cbc614c7264ceb20144ac
->>>>>>> master:jiacraft-server/src/main/resources/application-local.yaml
     config-storage:
       type: RedisTemplate # 采用 RedisTemplate 操作 Redis，会自动从 Spring 中获取
       key-prefix: wa # Redis Key 的前缀
@@ -271,11 +232,7 @@ jiacraft:
     env-version: develop # 小程序版本: 正式版为 "release"；体验版为 "trial"；开发版为 "develop"
   wxa-subscribe-message:
     miniprogram-state: developer # 跳转小程序类型：开发版为 “developer”；体验版为 “trial”为；正式版为 “formal”
-<<<<<<< HEAD:bjzjf-server/src/main/resources/application-local.yaml
-  tencent-lbs-key: 26MBZ-H64WG-MJNQ4-QYEMM-3D27H-MSFXK # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
-=======
   tencent-lbs-key: TVDBZ-TDILD-4ON4B-PFDZA-RNLKH-VVF6E # QQ 地图的密钥 https://lbs.qq.com/service/staticV2/staticGuide/staticDoc
->>>>>>> master:jiacraft-server/src/main/resources/application-local.yaml
 
 justauth:
   enabled: true

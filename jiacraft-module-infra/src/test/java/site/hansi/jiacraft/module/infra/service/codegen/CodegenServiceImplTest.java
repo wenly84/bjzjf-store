@@ -81,7 +81,7 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
         TableInfo tableInfo = mock(TableInfo.class);
         when(databaseTableService.getTable(eq(1L), eq("t_yunai")))
                 .thenReturn(tableInfo);
-        when(tableInfo.getComment()).thenReturn("智匠坊");
+        when(tableInfo.getComment()).thenReturn("芋艿");
         // mock 方法（TableInfo fields）
         TableField field01 = mock(TableField.class);
         when(field01.getComment()).thenReturn("主键");
@@ -129,7 +129,7 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
         assertServiceException(() -> codegenService.validateTableInfo(tableInfo),
                 CODEGEN_TABLE_INFO_TABLE_COMMENT_IS_NULL);
         // 情况三
-        when(tableInfo.getComment()).thenReturn("智匠坊");
+        when(tableInfo.getComment()).thenReturn("芋艿");
         assertServiceException(() -> codegenService.validateTableInfo(tableInfo),
                 CODEGEN_IMPORT_COLUMNS_NULL);
         // 情况四
@@ -225,10 +225,6 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
     }
 
     @Test
-<<<<<<< HEAD:bjzjf-module-infra/bjzjf-module-infra-biz/src/test/java/site/hansi/module/infra/service/codegen/CodegenServiceImplTest.java
-    @Disabled // TODO @智匠坊：这个单测会随机性失败，需要定位下；
-=======
->>>>>>> master:jiacraft-module-infra/src/test/java/site/hansi/jiacraft/module/infra/service/codegen/CodegenServiceImplTest.java
     public void testSyncCodegenFromDB() {
         // mock 数据（CodegenTableDO）
         CodegenTableDO table = randomPojo(CodegenTableDO.class, o -> o.setTableName("t_yunai")
@@ -246,7 +242,7 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
         TableInfo tableInfo = mock(TableInfo.class);
         when(databaseTableService.getTable(eq(1L), eq("t_yunai")))
                 .thenReturn(tableInfo);
-        when(tableInfo.getComment()).thenReturn("智匠坊");
+        when(tableInfo.getComment()).thenReturn("芋艿");
         // mock 方法（TableInfo fields）
         TableField field01 = mock(TableField.class);
         when(field01.getComment()).thenReturn("主键");
@@ -320,15 +316,9 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
     public void testGetCodegenTablePage() {
         // mock 数据
         CodegenTableDO tableDO = randomPojo(CodegenTableDO.class, o -> {
-<<<<<<< HEAD:bjzjf-module-infra/bjzjf-module-infra-biz/src/test/java/site/hansi/module/infra/service/codegen/CodegenServiceImplTest.java
-            o.setTableName("t_bjzjf");
-            o.setTableComment("智匠坊");
-            o.setClassName("Systembjzjf");
-=======
             o.setTableName("t_yunai");
             o.setTableComment("芋艿");
             o.setClassName("SystemYunai");
->>>>>>> master:jiacraft-module-infra/src/test/java/site/hansi/jiacraft/module/infra/service/codegen/CodegenServiceImplTest.java
             o.setCreateTime(buildTime(2021, 3, 10));
         }).setScene(CodegenSceneEnum.ADMIN.getScene());
         codegenTableMapper.insert(tableDO);
@@ -537,19 +527,11 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
         String comment = randomString();
         // mock 方法
         TableInfo tableInfo01 = mock(TableInfo.class);
-<<<<<<< HEAD:bjzjf-module-infra/bjzjf-module-infra-biz/src/test/java/site/hansi/module/infra/service/codegen/CodegenServiceImplTest.java
-        when(tableInfo01.getName()).thenReturn("t_bjzjf");
-        when(tableInfo01.getComment()).thenReturn("智匠坊");
-        TableInfo tableInfo02 = mock(TableInfo.class);
-        when(tableInfo02.getName()).thenReturn("t_bjzjf_02");
-        when(tableInfo02.getComment()).thenReturn("智匠坊_02");
-=======
         when(tableInfo01.getName()).thenReturn("t_yunai");
         when(tableInfo01.getComment()).thenReturn("芋艿");
         TableInfo tableInfo02 = mock(TableInfo.class);
         when(tableInfo02.getName()).thenReturn("t_yunai_02");
         when(tableInfo02.getComment()).thenReturn("芋艿_02");
->>>>>>> master:jiacraft-module-infra/src/test/java/site/hansi/jiacraft/module/infra/service/codegen/CodegenServiceImplTest.java
         when(databaseTableService.getTableList(eq(dataSourceConfigId), eq(name), eq(comment)))
                 .thenReturn(ListUtil.toList(tableInfo01, tableInfo02));
         // mock 数据
@@ -563,13 +545,8 @@ public class CodegenServiceImplTest extends BaseDbUnitTest {
         List<DatabaseTableRespVO> result = codegenService.getDatabaseTableList(dataSourceConfigId, name, comment);
         // 断言
         assertEquals(1, result.size());
-<<<<<<< HEAD:bjzjf-module-infra/bjzjf-module-infra-biz/src/test/java/site/hansi/module/infra/service/codegen/CodegenServiceImplTest.java
-        assertEquals("t_bjzjf", result.get(0).getName());
-        assertEquals("智匠坊", result.get(0).getComment());
-=======
         assertEquals("t_yunai", result.get(0).getName());
         assertEquals("芋艿", result.get(0).getComment());
->>>>>>> master:jiacraft-module-infra/src/test/java/site/hansi/jiacraft/module/infra/service/codegen/CodegenServiceImplTest.java
     }
 
 }

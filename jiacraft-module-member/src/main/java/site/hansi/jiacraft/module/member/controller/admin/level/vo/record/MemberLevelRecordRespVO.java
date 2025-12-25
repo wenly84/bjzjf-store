@@ -19,10 +19,4 @@ public class MemberLevelRecordRespVO extends MemberLevelRecordBaseVO {
     @Schema(description = "创建时间", requiredMode = Schema.RequiredMode.REQUIRED)
     private LocalDateTime createTime;
 
-<<<<<<< HEAD:bjzjf-module-mall/bjzjf-module-trade-biz/src/main/java/site/hansi/module/trade/controller/admin/brokerage/vo/withdraw/BrokerageWithdrawRespVO.java
-    @Schema(description = "用户昵称", requiredMode = Schema.RequiredMode.REQUIRED, example = "智匠坊")
-    private String userNickname;
-
-=======
->>>>>>> master:jiacraft-module-member/src/main/java/site/hansi/jiacraft/module/member/controller/admin/level/vo/record/MemberLevelRecordRespVO.java
 }

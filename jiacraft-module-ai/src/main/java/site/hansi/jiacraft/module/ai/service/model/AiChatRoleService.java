@@ -1,31 +1,17 @@
 package site.hansi.jiacraft.module.ai.service.model;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/model/AiChatRoleService.java
-import static site.hansi.framework.common.util.collection.CollectionUtils.convertMap;
-=======
 import site.hansi.jiacraft.framework.common.pojo.PageResult;
 import site.hansi.jiacraft.module.ai.controller.admin.model.vo.chatRole.AiChatRolePageReqVO;
 import site.hansi.jiacraft.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveMyReqVO;
 import site.hansi.jiacraft.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveReqVO;
 import site.hansi.jiacraft.module.ai.dal.dataobject.model.AiChatRoleDO;
 import jakarta.validation.Valid;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/model/AiChatRoleService.java
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-<<<<<<< HEAD:bjzjf-module-ai/bjzjf-module-ai-biz/src/main/java/site/hansi/module/ai/service/model/AiChatRoleService.java
-import javax.validation.Valid;
-
-import site.hansi.framework.common.pojo.PageResult;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRolePageReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveMyReqVO;
-import site.hansi.module.ai.controller.admin.model.vo.chatRole.AiChatRoleSaveReqVO;
-import site.hansi.module.ai.dal.dataobject.model.AiChatRoleDO;
-=======
 import static site.hansi.jiacraft.framework.common.util.collection.CollectionUtils.convertMap;
->>>>>>> master:jiacraft-module-ai/src/main/java/site/hansi/jiacraft/module/ai/service/model/AiChatRoleService.java
 
 /**
  * AI 聊天角色 Service 接口
