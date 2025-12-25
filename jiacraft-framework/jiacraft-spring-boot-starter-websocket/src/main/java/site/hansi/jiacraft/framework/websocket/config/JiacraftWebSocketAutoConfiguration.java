@@ -38,7 +38,7 @@ import java.util.List;
 /**
  * WebSocket 自动配置
  *
- * @author xingyu4j
+ * @author 北京智匠坊
  */
 @AutoConfiguration(before = JiacraftRedisMQConsumerAutoConfiguration.class) // before JiacraftRedisMQConsumerAutoConfiguration 的原因是，需要保证 RedisWebSocketMessageConsumer 先创建，才能创建 RedisMessageListenerContainer
 @EnableWebSocket // 开启 websocket
